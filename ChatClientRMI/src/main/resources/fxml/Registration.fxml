@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="511.0" prefWidth="382.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ldnhat.controller.RegisterController">
+   <children>
+      <Pane prefHeight="511.0" prefWidth="382.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css">
+         <children>
+            <VBox layoutX="47.0" layoutY="73.0" prefHeight="297.0" prefWidth="288.0" spacing="20.0">
+               <children>
+                  <JFXTextField fx:id="name" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Tên" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="username" focusColor="#005662" labelFloat="true" prefHeight="35.0" promptText="Tên Tài Khoản" unFocusColor="#005662">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="password" focusColor="#005662" labelFloat="true" prefHeight="35.0" promptText="Mật khẩu" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <JFXButton fx:id="registerButton" disable="true" alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="386.0" onMouseClicked="#register" prefHeight="37.0" prefWidth="147.0" style="-fx-background-radius: 50; -fx-background-color: #00838e;" text="Đăng ký" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#d00c0c" />
+                        <Stop color="#d00c0c" offset="0.007662835249042145" />
+                        <Stop color="#005661" offset="0.33676975945017185" />
+                        <Stop color="#005661" offset="0.6494845360824741" />
+                        <Stop color="#005662" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="12.0" onMouseClicked="#closeApp" prefHeight="25.0" prefWidth="30.0" styleClass="closeButton" text="X" textFill="#545454">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="backToLogin" fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#backToLogin" pickOnBounds="true" preserveRatio="true" styleClass="backButton">
+               <image>
+                  <Image url="@../assets/back_blue.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+     
+   </children>
+</AnchorPane>

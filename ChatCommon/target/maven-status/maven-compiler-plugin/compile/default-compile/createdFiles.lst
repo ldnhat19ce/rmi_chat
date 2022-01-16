@@ -1,0 +1,12 @@
+com\ldnhat\model\DiscussionModel.class
+com\ldnhat\model\FileModel.class
+com\ldnhat\remote\DiscussionRemote.class
+com\ldnhat\remote\Server.class
+com\ldnhat\model\DiscussionDetail.class
+com\ldnhat\model\VideoCallModel.class
+com\ldnhat\model\StickerDetailModel.class
+com\ldnhat\remote\ClientRemote.class
+com\ldnhat\model\MessageModel.class
+com\ldnhat\model\Discussion.class
+com\ldnhat\model\StickerModel.class
+com\ldnhat\model\ClientModel.class
